@@ -1,4 +1,4 @@
-module github.com/mus-format/mus-ext-go
+module github.com/mus-format/ext-mus-go
 
 go 1.23.0
 
