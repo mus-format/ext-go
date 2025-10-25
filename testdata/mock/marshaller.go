@@ -4,8 +4,10 @@ import (
 	"github.com/ymz-ncnk/mok"
 )
 
-type MarshalMUSFn func(bs []byte) (n int)
-type SizeMUSFn func() (size int)
+type (
+	MarshalMUSFn func(bs []byte) (n int)
+	SizeMUSFn    func() (size int)
+)
 
 func NewMarshallerMUS() MarshallerMUS {
 	return MarshallerMUS{mok.New("MarshallerMUS")}
